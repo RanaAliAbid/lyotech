@@ -106,14 +106,14 @@ a img {
 a:active {
   outline: none;
   text-decoration: none;
-  color: #232323;
+  color: #387eee;
   opacity: 1;
 }
 
 a:focus {
   outline: none;
   text-decoration: none;
-  color: #232323;
+  color: #387eee;
 }
 
 a:hover {
