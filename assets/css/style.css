@@ -462,6 +462,9 @@ a {
 .bg-dark {
   background-color: #387eee !important;
 }
+.black-bg{
+  background:#1d1d1d !important;
+}
 
 .bg-theme {
   background-color: #0080f0;
