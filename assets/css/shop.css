@@ -1848,7 +1848,9 @@ a.reset_variations {
 }
 
 /* Checkout */
-
+div#checkoutAccordion button.accordion-button {
+  color: #36383c;
+}
 form.checkout.woocommerce-checkout ul.woocommerce-error {
     margin: 0;
     list-style: none;

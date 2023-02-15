@@ -96,7 +96,7 @@ label {
 a {
   outline: none;
   text-decoration: none;
-  color: #0080f0;
+  color: #387fee;
 }
 
 a img {
@@ -511,6 +511,7 @@ a {
   z-index: -1;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  display: none;
 }
 
 .shadow.dark-hard {
@@ -2699,6 +2700,7 @@ a {
   height: 100%;
   width: 100%;
   position: relative;
+  /* background: #0c0c0c; */
 }
 
 @media (max-width: 1023px) {
@@ -3601,6 +3603,7 @@ a {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: 30px;
+  display: none;
 }
 
 .banner-style-three {
@@ -12059,4 +12062,16 @@ ul.row.g-0.footer-socials li {
   animation-name: UpDown;
   -webkit-animation-duration: 4s;
   animation-duration: 4s;
+}
+.banner-area.banner-style-two {
+  background: black;
+  text-align: center;
+}
+
+.banner-style-two p {
+  padding: 0 !important;
+}
+.lfi-banner-pro{
+  width: 100%;
+  margin: 0px 0 0;
 }
