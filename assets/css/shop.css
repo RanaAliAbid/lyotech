@@ -2711,6 +2711,7 @@ a.btn.primary-black:hover {
   margin-top: 30px;
   background-color: #f8f8f8;
   border: 1px solid rgba(0,0,0,.125);
+  margin-bottom: 40px;
 }
 .cart-calculator-wrapper .cart-calculate-items {
   font-weight: 500;
@@ -3521,7 +3522,3 @@ body.dark-layout .banner-area .box-banner .btn-theme.effect:hover {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 }
-
-
-
-
