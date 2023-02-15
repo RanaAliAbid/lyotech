@@ -11916,6 +11916,7 @@ footer.bg-dark li {
 
 footer.bg-dark li a {
   color: #ffffff;
+  font-size: 15px;
 }
 
 footer.bg-dark li a:hover {
