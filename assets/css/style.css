@@ -12082,3 +12082,30 @@ ul.row.g-0.footer-socials li {
   width: 100%;
   margin: 0px 0 0;
 }
+
+
+/* User style */
+
+li.userAccount a {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+li.userAccount a .UserInfoLogin {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.UserInfoLogin span.nameUser {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 12px;
+}
+
+.UserInfoLogin span {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}

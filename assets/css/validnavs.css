@@ -232,7 +232,7 @@
 
 .navbar .attr-right {
 	float: right;
-	margin-left: 30px;
+	margin-left: 0;
 }
 
 .main-nav-content .collapse {
@@ -246,8 +246,8 @@
 
 .navbar .attr-right .attr-nav li.dropdown {
     position: relative;
-    top: 8px;
-	margin-left: -20px;
+    top: 0px;
+    margin-left: 0;
 }
 
 .navbar .attr-right .attr-nav li.contact {
@@ -754,7 +754,7 @@ nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list li.to
 
 /* Top Search */
 
-.top-search {
+.top-search, .LoginRegister {
 	padding: 10px 0;
 	display: none;
 	position: fixed;
@@ -785,7 +785,19 @@ nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list li.to
 	z-index: 9;
 }
 
-.navbar .top-search::after {
+.navbar .top-search::after  {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: var(--dark);
+	z-index: -1;
+	opacity: 0.9;
+}
+
+body .LoginRegister::after{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1039,6 +1051,7 @@ body.on-side nav.navbar::after {
 	}
 	nav.navbar.validnavs.navbar-fixed.no-background.attr-border .attr-nav::after {
 		border-left: 1px solid rgba(255, 255, 255, 0.3);
+		border: none !important;
 	}
 	nav.navbar.validnavs.navbar-fixed.no-background.attr-border.with-bg .attr-nav::after {
 		border-left: 1px solid #e7e7e7;
@@ -2488,7 +2501,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 }
 
 .navbar.navbar-common .attr-right {
-	margin-top: -15px;
+	margin-top: 0;
 	margin-left: 30px !important;
 }
 

@@ -190,6 +190,25 @@
                 $('.navbar').removeClass("pause-sticked");
             });
 
+
+             // ------------------------------------------------------------------------------ //
+            // Toggle Search
+            // ------------------------------------------------------------------------------ //
+            // $("nav.navbar.validnavs .attr-nav").each(function() {
+            //     $("li.userAccount > a", this).on("click", function(e) {
+            //         e.preventDefault();
+            //         $(".LoginRegister").slideToggle();
+            //         $('.navbar').toggleClass("pause-sticked");
+            //     });
+            // });
+            // $(".input-group-addon.close-search").on("click", function() {
+            //     $(".LoginRegister").slideUp();
+            //     $('.navbar').removeClass("pause-sticked");
+            // });
+
+
+
+
             // ------------------------------------------------------------------------------ //
             // Toggle Side Menu
             // ------------------------------------------------------------------------------ //

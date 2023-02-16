@@ -33,9 +33,7 @@
 
 <body>
 
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+
 
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
@@ -46,9 +44,10 @@
     <!-- Header 
     ============================================= -->
     <header>
-        <!-- navbar mobile-sidenav nav-border attr-border attr-border-full navbar-sticky navbar-default validnavs navbar-fixed white no-background on menu-center no-full -->
+
         <!-- Start Navigation -->
-        <nav class="navbar mobile-sidenav nav-border attr-border attr-border-full navbar-sticky navbar-default validnavs navbar-fixed white no-background on menu-center no-full">
+        <nav
+            class="navbar mobile-sidenav nav-border attr-border attr-border-full navbar-sticky navbar-default validnavs navbar-fixed white no-background on menu-center no-full">
             <div class="container d-flex justify-content-between align-items-center">
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
@@ -60,7 +59,7 @@
                 </div>
                 <!-- End Header Navigation -->
 
-                <!-- Main Nav --> 
+                <!-- Main Nav -->
                 <div class="main-nav-content">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
@@ -91,6 +90,68 @@
                         </ul>
                     </div><!-- /.navbar-collapse -->
 
+                    <div class="attr-right">
+                        <!-- Start Atribute Navigation -->
+                        <div class="attr-nav">
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <span class="badge">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu cart-list fadeOutUp" style="display: none; opacity: 1;">
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="shop-cart.html" class="photo">
+                                                    <img src="assets/img/product/2.png" alt="Thumb">
+                                                </a>
+                                                <a href="shop-cart.html" class="remove-product">
+                                                    <i class="fas fa-times"></i>
+                                                </a>
+                                            </div>
+                                            <div class="info">
+                                                <h6><a href="shop-cart.html">Delica omtantur </a></h6>
+                                                <p>2x - <span class="price">$99.99</span></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="shop-cart.html" class="photo">
+                                                    <img src="assets/img/product/3.png" alt="Thumb">
+                                                </a>
+                                                <a href="shop-cart.html" class="remove-product">
+                                                    <i class="fas fa-times"></i>
+                                                </a>
+                                            </div>
+                                            <div class="info">
+                                                <h6><a href="shop-cart.html">Omnes ocurreret</a></h6>
+                                                <p>1x - <span class="price">$33.33</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="total">
+                                            <span class="pull-right"><strong>Total</strong>: $0.00</span>
+                                            <a href="shop-cart.html" class="btn btn-default btn-cart">Cart</a>
+                                            <a href="shop-cart.html" class="btn btn-default btn-cart">Checkout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="userAccount" data-bs-toggle="modal" data-bs-target="#LoginRegisterModal"
+                                    data-toggle="dropdown">
+                                    <a href="#">
+                                        <i class="far fa-user"></i>
+                                        <div class="UserInfoLogin">
+                                            <span class="nameUser">Hello, Sign in</span>
+                                            <span>My Account</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- End Atribute Navigation -->
+                    </div>
+
                     <!-- Overlay screen for menu -->
                     <div class="overlay-screen"></div>
                     <!-- End Overlay screen for menu -->
@@ -103,6 +164,139 @@
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
+
+    <!-- Modal -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div role="document" class="modal-dialog modal-dialog-centered modal-md">
+
+
+            <div class="modal-content">
+                <div class="modal-header bg-secondary">
+
+
+                    <div class="LoginRegister-Tabs">
+                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="Login-tab" data-bs-toggle="tab"
+                                    data-bs-target="#LoginTab" type="button" role="tab" aria-controls="LoginTab"
+                                    aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="register-tab" data-bs-toggle="tab"
+                                    data-bs-target="#registerTab" type="button" role="tab" aria-controls="registerTab"
+                                    aria-selected="false" tabindex="-1">Profile</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="modal-body">
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade active show" id="LoginTab" role="tabpanel" aria-labelledby="home-tab">
+                            <form autocomplete="off" class="needs-validation tab-pane fade show active ">
+
+                                <div class="mb-3">
+                                    <label for="si-email" class="form-label">Email
+                                        address</label><input type="email" id="si-email"
+                                        placeholder="johndoe@example.com" required="" formcontrolname="email"
+                                        class="form-control ">
+                                    <div class="invalid-feedback">Please provide a valid email
+                                        address.</div>
+                                </div>
+
+                                <div class="mb-3"><label for="si-password" class="form-label">Password </label>
+                                    <div class="password-toggle"><input id="si-password" required=""
+                                            formcontrolname="password" class="form-control" type="password">
+                                        <label aria-label="Show/hide password" class="password-toggle-btn">
+                                            <input type="checkbox" class="password-toggle-check">
+                                            <span class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 d-flex flex-wrap justify-content-between">
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" id="si-remember" class="form-check-input"><label
+                                            for="si-remember" class="form-check-label">Remember me</label>
+                                    </div>
+                                    <a href="#" class="fs-sm">Forgot password?</a>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-shadow d-block w-100">Sign
+                                    in</button>
+                            </form>
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="registerTab" role="tabpanel" aria-labelledby="registerTab">
+                            <form novalidate="" autocomplete="off" class="needs-validation tab-pane fade show active ">
+                                <div class="mb-3"><label for="su-name" class="form-label">Full
+                                        name</label><input type="text" id="su-name" placeholder="John Doe" required=""
+                                        formcontrolname="name" class="form-control ">
+                                    <div class="invalid-feedback">Please fill in your name.</div>
+                                </div>
+                                <div class="mb-3"><label for="su-email">Email address</label><input type="email"
+                                        id="su-email" placeholder="johndoe@example.com" required=""
+                                        formcontrolname="email" class="form-control ">
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                                <div class="mb-3"><label for="su-password" class="form-label">Password</label>
+                                    <div class="password-toggle"><input id="su-password" required=""
+                                            formcontrolname="password" class="form-control " type="password"><label
+                                            aria-label="Show/hide
+                    password" class="password-toggle-btn"><input type="checkbox" class="password-toggle-check"><span
+                                                class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                    </div>
+                                </div>
+                                <div class="mb-3"><label for="su-password-confirm" class="form-label">Confirm
+                                        password</label>
+                                    <div class="password-toggle"><input id="su-password-confirm" required=""
+                                            class="form-control" type="password"><label aria-label="Show/hide
+                    password" class="password-toggle-btn"><input type="checkbox" class="password-toggle-check"><span
+                                                class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                    </div>
+                                </div><button type="submit" class="btn btn-primary btn-shadow d-block w-100">Sign
+                                    up</button>
+                            </form><!---->
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div class="LoginRegister" style="display: none;" class="d-block modal fade show">
+     
+    </div> -->
+
+
+
+
+
+
+
 
     <!-- Start Banner Area 
     ============================================= -->
@@ -158,8 +352,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6 banner-style-three">
-                        <img src="assets/img/all-tech-pro.png" alt="Thumb" class="animate__  animate__zoomIn wow animated"
-                        style="visibility: visible; animation-name: zoomIn;">
+                        <img src="assets/img/all-tech-pro.png" alt="Thumb"
+                            class="animate__  animate__zoomIn wow animated"
+                            style="visibility: visible; animation-name: zoomIn;">
                     </div>
                 </div>
             </div>
@@ -641,26 +836,21 @@
                             <div class="address">
                                 <ul>
                                     <li>
-                                        5919 Trussville Crossings Pkwy, new Dusting town, Austria
+                                        LYOTECH LABS LLC
+                                        8 The Green, Dover
+                                        DE, USA.
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <i class="fal fa-clock"></i>
+                                            <i class="fas fa-envelope-open-text"></i>
                                         </div>
                                         <div class="content">
-                                            <strong>Opening Hours:</strong>
-                                            8:00 AM – 7:45 PM
+                                            <strong>Email:</strong>
+                                            <a href="mailto:info@lyotechlabs.com"
+                                                target="_blank">info@lyotechlabs.com</a>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fal fa-user-headset"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Phone:</strong>
-                                            <a href="tel:2151234567">+123 34598768</a>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
 
@@ -831,6 +1021,10 @@
     </footer>
     <!-- End Footer -->
 
+
+
+
+
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -852,6 +1046,7 @@
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/validnavs.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </body>
 
