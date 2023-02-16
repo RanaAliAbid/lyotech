@@ -5249,17 +5249,21 @@ a {
 
 .about-style-seven .thumb img:nth-child(2) {
   position: absolute;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  left: 0;
   right: 0;
-  bottom: -60px;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  border: 10px solid #ffffff;
+  display: block;
+  top: 50%;
+  margin: 0 auto;
+  max-width: 54%;
+  transform: translate(0%,-50%);
 }
 
 @media only screen and (max-width: 991px) {
   .about-style-seven .thumb img:nth-child(2) {
-    display: none;
+    /* display: none; */
   }
 }
 
