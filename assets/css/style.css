@@ -12109,3 +12109,92 @@ li.userAccount a .UserInfoLogin {
   font-weight: 600;
   line-height: 20px;
 }
+div#LoginRegisterModal .modal-header.bg-secondary {
+  background: #f6f9fc!important;
+  padding-bottom: 0;
+}
+.LoginRegister-Tabs .nav-tabs .nav-link.active:before {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0px;
+  width: calc(100% - 0px);
+  height: 1px;
+  transition: color .25s ease-in-out,background-color .25s ease-in-out,box-shadow .25s ease-in-out,border-color .25s ease-in-out;
+  background-color: #387fee;
+  content: "";
+}
+
+.LoginRegister-Tabs .nav-tabs .nav-link {
+  border: none;
+  background: transparent !important;
+  font-weight: 700;
+  color: #0e0e0e;
+}
+
+.LoginRegister-Tabs .nav-tabs .nav-link.active {
+  color: #387fee;
+}
+
+.LoginRegister-Tabs ul {
+  border-bottom: 0;
+  margin-bottom: -1px;
+}
+
+.password-toggle-btn .password-toggle-indicator:before {
+  content: "\e1129";
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: solid 1px #464646;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+}
+
+label.password-toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 1.0625rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+input.password-toggle-check {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+
+.mdi-eye-off-outline {
+  margin: 5px;
+  width: 13px;
+  height: 13px;
+  border: solid 1px #626262;
+  border-radius: 75% 15%;
+  position: relative;
+  transform: rotate(45deg);
+  display: block;
+}
+.form-check-input[type=checkbox]{
+  height: auto;
+  min-height: 16px;
+  width: 16px;
+  margin-top: 5px;
+  border: 1px solid #c1cdd7;
+}
+.form-control {
+  position: relative;
+}
+.password-toggle {
+  position: relative;
+}
