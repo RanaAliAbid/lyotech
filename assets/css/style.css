@@ -209,9 +209,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: #ffffff;
   color: #666666;
+  overflow-y: auto !important;
+  padding-right: 0 !important;
 }
 
 h1,
