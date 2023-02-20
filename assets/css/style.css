@@ -12198,3 +12198,28 @@ input.password-toggle-check {
 .password-toggle {
   position: relative;
 }
+
+/* Account Detail Page Style */
+.account-wrap {
+  margin-top: -80px;
+  position: relative;
+  z-index: 8;
+}
+
+.breadcrumb-area.text-center.account-banner {
+  padding: 50px 0 140px;
+}
+
+.account-wrap div#account-menu ul li a {
+  color: #232323;
+  font-weight: 500;
+}
+
+.bg-secondary {
+  background-color: #f6f9fc!important;
+}
+
+.account-wrap div#account-menu h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
