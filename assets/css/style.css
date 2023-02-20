@@ -12216,7 +12216,10 @@ input.password-toggle-check {
   color: #232323;
   font-weight: 500;
 }
-
+.account-wrap div#account-menu ul li a.active, 
+.account-wrap div#account-menu ul li a:hover {
+  color: #387eee;
+}
 .bg-secondary {
   background-color: #f6f9fc!important;
 }
@@ -12224,4 +12227,11 @@ input.password-toggle-check {
 .account-wrap div#account-menu h3 {
   font-size: 18px;
   font-weight: 700;
+}
+.account-wrap .table-responsive tr td a {
+  color: #232323;
+}
+
+.account-wrap .table-responsive tr td a:hover {
+  color: #0080f0;
 }
