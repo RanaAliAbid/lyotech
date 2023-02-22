@@ -1879,7 +1879,7 @@ a {
 
 .btn.btn-light:hover {
   color: #ffffff;
-  background: transparent;
+  background: #222222;
   border: 2px solid #ffffff;
 }
 
@@ -12235,4 +12235,8 @@ input.password-toggle-check {
 
 .account-wrap .table-responsive tr td a:hover {
   color: #0080f0;
+}
+.account-wrap .img-thumbnail.rounded-circle.position-relative {
+  width: 92px !important;
+  height: 92px;
 }
