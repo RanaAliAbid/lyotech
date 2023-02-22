@@ -148,6 +148,17 @@
                                         </li>
                                     </ul>
                                 </li>
+
+                                <li class="userAccount" data-bs-toggle="modal" data-bs-target="#LoginRegisterModal"
+                                data-toggle="dropdown">
+                                <a href="#">
+                                    <i class="far fa-user"></i>
+                                    <div class="UserInfoLogin">
+                                        <span class="nameUser">Hello, Sign in</span>
+                                        <span>My Account</span>
+                                    </div>
+                                </a>
+                            </li>
                             </ul>
                         </div>
                         <!-- End Atribute Navigation -->
@@ -166,6 +177,121 @@
     </header>
     <!-- End Header -->
 
+
+     <!-- Modal Login Register Start -->
+     <div class="modal fade" id="LoginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div role="document" class="modal-dialog modal-dialog-centered modal-md">
+
+         <div class="modal-content">
+             <div class="modal-header bg-secondary">
+                 <div class="LoginRegister-Tabs">
+                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                         <li class="nav-item" role="presentation">
+                             <button class="nav-link active" id="Login-tab" data-bs-toggle="tab"
+                                 data-bs-target="#LoginTab" type="button" role="tab" aria-controls="LoginTab"
+                                 aria-selected="true">Login </button>
+                         </li>
+                         <li class="nav-item" role="presentation">
+                             <button class="nav-link" id="register-tab" data-bs-toggle="tab"
+                                 data-bs-target="#registerTab" type="button" role="tab" aria-controls="registerTab"
+                                 aria-selected="false" tabindex="-1">Sign Up</button>
+                         </li>
+                     </ul>
+                 </div>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+
+
+             <div class="modal-body">
+                 <div class="tab-content" id="myTabContent">
+
+                     <div class="tab-pane fade active show" id="LoginTab" role="tabpanel" aria-labelledby="home-tab">
+                         <form autocomplete="off" class="needs-validation tab-pane fade show active ">
+
+                             <div class="mb-3">
+                                 <label for="si-email" class="form-label">Email
+                                     address</label><input type="email" id="si-email"
+                                     placeholder="johndoe@example.com" required="" formcontrolname="email"
+                                     class="form-control ">
+                                 <div class="invalid-feedback">Please provide a valid email
+                                     address.</div>
+                             </div>
+
+                             <div class="mb-3"><label for="si-password" class="form-label">Password </label>
+                                 <div class="password-toggle"><input id="si-password" required=""
+                                         formcontrolname="password" class="form-control" type="password">
+                                     <label aria-label="Show/hide password" class="password-toggle-btn">
+                                         <input type="checkbox" class="password-toggle-check">
+                                         <span class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                 </div>
+                             </div>
+
+                             <div class="mb-3 d-flex flex-wrap justify-content-between">
+                                 <div class="form-check mb-2">
+                                     <input type="checkbox" id="si-remember" class="form-check-input"><label
+                                         for="si-remember" class="form-check-label">Remember me</label>
+                                 </div>
+                                 <a href="#" class="fs-sm">Forgot password?</a>
+                             </div>
+
+                             <button type="submit" onclick="location.href='account-user.html';"
+                                 class="btn btn-theme d-block w-100">Sign
+                                 in</button>
+                         </form>
+                     </div>
+
+
+
+                     <div class="tab-pane fade" id="registerTab" role="tabpanel" aria-labelledby="registerTab">
+                         <form novalidate="" autocomplete="off" class="needs-validation tab-pane fade show active ">
+                             <div class="mb-3"><label for="su-name" class="form-label">Full
+                                     name</label><input type="text" id="su-name" placeholder="John Doe" required=""
+                                     formcontrolname="name" class="form-control ">
+                                 <div class="invalid-feedback">Please fill in your name.</div>
+                             </div>
+                             <div class="mb-3"><label for="su-email">Email address</label><input type="email"
+                                     id="su-email" placeholder="johndoe@example.com" required=""
+                                     formcontrolname="email" class="form-control ">
+                                 <div class="invalid-feedback">Please provide a valid email address.</div>
+                             </div>
+                             <div class="mb-3"><label for="su-password" class="form-label">Password</label>
+                                 <div class="password-toggle"><input id="su-password" required=""
+                                         formcontrolname="password" class="form-control " type="password"><label
+                                         aria-label="Show/hide
+                 password" class="password-toggle-btn"><input type="checkbox" class="password-toggle-check"><span
+                                             class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                 </div>
+                             </div>
+                             <div class="mb-3"><label for="su-password-confirm" class="form-label">Confirm
+                                     password</label>
+                                 <div class="password-toggle"><input id="su-password-confirm" required=""
+                                         class="form-control" type="password"><label aria-label="Show/hide
+                 password" class="password-toggle-btn"><input type="checkbox" class="password-toggle-check"><span
+                                             class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                 </div>
+                             </div><button type="submit" class="btn btn-theme d-block w-100">Sign
+                                 up</button>
+                         </form><!---->
+                     </div>
+
+
+                 </div>
+             </div>
+
+
+
+
+
+
+         </div>
+
+
+     </div>
+ </div>
+
+ <!-- Modal Login Register End -->
+
     <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
@@ -173,11 +299,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>CoolWallet-S</h1>
+                    <h1>Cookies</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">CoolWallet-S</li>
+                            <li class="active">Cookies</li>
                         </ol>
                     </nav>
                 </div>
@@ -204,16 +330,13 @@
                         “<strong>User</strong>”,
                         “<strong>you</strong>”,
                         “<strong>your</strong>”) when you visit our
-                        website&nbsp;</span><a href="https://www.lyotechlabs.com/"><span
-                            style="color: rgb(5, 99, 193);">lyotechlabs.com</span></a><span
-                        style="color: rgb(68, 114, 196);">.&nbsp;</span>
+                        website&nbsp;</span><a href="https://www.lyotechlabs.com/"><span style="color: rgb(5, 99, 193);">lyotechlabs.com</span></a><span style="color: rgb(68, 114, 196);">.&nbsp;</span>
                 </p>
                 <p><span style="color: rgb(68, 114, 196);">&nbsp;</span></p>
                 <p><span>You should read this&nbsp;</span>Policy<span>&nbsp;so you can understand what type of cookies
                         we use and what
                         these technologies are, as well as you will have the right to
-                        control our use of cookies.</span><span>&nbsp;</span><span
-                        style="font-size: 16px;">Further</span><span>,&nbsp;</span>c<span>ookies do not contain any
+                        control our use of cookies.</span><span>&nbsp;</span><span style="font-size: 16px;">Further</span><span>,&nbsp;</span>c<span>ookies do not contain any
                         information that personally identifies
                         a User, however the personal information that we use, store and
                         keep about you may be linked to the information stored in and
@@ -222,8 +345,7 @@
                 <p><span>&nbsp;</span></p>
                 <p><span>&nbsp;</span></p>
                 <ol start="1" type="1" style="margin-bottom: 0cm; margin-top: 0cm;">
-                    <li
-                        style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; border: none;">
+                    <li style="margin-top: 0cm;margin-right: 0cm;margin-bottom: 0cm;text-align: justify;border: none;list-style: auto;">
                         <strong>WHAT ARE COOKIES?</strong></li>
                 </ol>
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span>&nbsp;</span></p>
@@ -250,15 +372,14 @@
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span>&nbsp;</span></p>
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span>&nbsp;</span></p>
                 <ol start="2" type="1" style="margin-bottom: 0cm; margin-top: 0cm;">
-                    <li
-                        style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; border: none;">
-                        <strong>WHAT COOKIES WE USE?</strong></li>
+                    <li style="margin-top: 0cm;margin-right: 0cm;margin-bottom: 0cm;text-align: justify;border: none;list-style: decimal;">
+                        <strong style="
+    list-style: ;
+">WHAT COOKIES WE USE?</strong></li>
                 </ol>
-                <p
-                    style="margin: 0cm 0cm 0cm 36pt; line-height: 26px; font-size: 15px; text-align: justify; border: none;">
+                <p style="margin: 0cm 0cm 0cm 36pt; line-height: 26px; font-size: 15px; text-align: justify; border: none;">
                     <strong><span>&nbsp;</span></strong></p>
-                <p
-                    style="margin: 0cm 0cm 0cm 36pt; line-height: 26px; font-size: 15px; text-align: justify; border: none;">
+                <p style="margin: 0cm 0cm 0cm 36pt; line-height: 26px; font-size: 15px; text-align: justify; border: none;">
                     <span>We use different types of&nbsp;</span>C<span>ookies. When you access
                         the&nbsp;</span>w<span>ebsite, we will place strictly necessary&nbsp;</span>C<span>ookies on
                         your browser or device. Other types of Cookies will be
@@ -266,8 +387,7 @@
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span>&nbsp;</span></p>
                 <p style="text-indent: 36pt;"><span>The full list of&nbsp;</span>C<span>ookies we used on LYOTECH LABS
                         website is below:</span></p>
-                <p style="text-indent: 36pt;"><span>&nbsp;</span></p>
-                <ol style="list-style-type: lower-roman; margin-left: 53px;">
+                <ol style="list-style-type: lower-roman; margin-left: 53px;" class="roman-list">
                     <li><span>Session Cookies&nbsp;</span></li>
                     <li><span>Persistent Cookies</span></li>
                     <li><span>First Party Cookies</span></li>
@@ -279,14 +399,13 @@
                 </ol>
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span><br>&nbsp;</span></p>
                 <ol start="3" type="1" style="margin-bottom: 0cm; margin-top: 0cm;">
-                    <li
-                        style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; border: none;">
+                    <li style="margin-top: 0cm;margin-right: 0cm;margin-bottom: 0cm;text-align: justify;border: none;list-style: auto;">
                         <strong>WHY DO WE USE COOKIES?</strong></li>
                 </ol>
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span><br>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
-                    <ol start="1" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>Session
+                    <ol start="1" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;" class="alpha-list">
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>Session
                                     Cookies</span></strong><span>&nbsp;are temporary and expire once you close your
                                 browser.
                                 It stores information for the time, or session that the user
@@ -297,7 +416,7 @@
                     <span>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol start="2" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>Persistent
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>Persistent
                                     Cookies&nbsp;</span></strong><span>encompasses all Cookies that remain on your hard
                                 drive until
                                 you erase or your browser does it. It depends on the
@@ -306,12 +425,11 @@
                                 their duration can vary.&nbsp;</span></li>
                     </ol>
                 </div>
-                <p
-                    style="margin: 0cm 0cm 0cm 58.5pt; line-height: 26px; font-size: 15px; text-align: justify; text-indent: -22.5pt;">
+                <p style="margin: 0cm 0cm 0cm 58.5pt; line-height: 26px; font-size: 15px; text-align: justify; text-indent: -22.5pt;">
                     <strong><span>&nbsp;</span></strong></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol start="3" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>First Party
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>First Party
                                     Cookies</span></strong><span>&nbsp;are put on your device directly by the website of
                                 LYOTECH LABS in which you are visiting</span></li>
                     </ol>
@@ -320,7 +438,7 @@
                     <span>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol start="4" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>Third</span>
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>Third</span>
                                 <span>Party</span> <span>Cookies</span></strong><span>&nbsp;are placed on your device,
                                 not by this&nbsp;</span>w<span>ebsite you are visiting, but by a third party like an
                                 advertiser or an analytic system. Generally, the Third Party
@@ -336,15 +454,13 @@
                                 use this Website:</span></li>
                     </ol>
                 </div>
-                <p
-                    style="margin: 0cm 0cm 0cm 58.5pt; line-height: 26px; font-size: 15px; text-align: justify; text-indent: -22.5pt;">
+                <p style="margin: 0cm 0cm 0cm 58.5pt; line-height: 26px; font-size: 15px; text-align: justify; text-indent: -22.5pt;">
                     <strong><span>&nbsp;</span></strong></p>
                 <ol start="4" type="a" style="margin-bottom: 0cm; margin-top: 0cm;">
                     <ol start="1" type="I" style="margin-bottom: 0cm; margin-top: 0cm;">
-                        <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify;">
+                        <li style="margin-top: 0cm;margin-right: 0cm;margin-bottom: 0cm;text-align: justify;list-style-type: inherit;">
                             <strong>Google Analytics Cookies</strong> to measure your
-                            interactions with the content of our website. These&nbsp;<span
-                                style="color: windowtext;">Co</span>okies collect information about your interactions
+                            interactions with the content of our website. These&nbsp;<span style="color: windowtext;">Co</span>okies collect information about your interactions
                             with our
                             website, such as unique visits, repeat visits, session duration
                             and&nbsp;<span style="color: windowtext;">w</span>ebsite
@@ -356,7 +472,7 @@
                     <strong><span>&nbsp;</span></strong></p>
                 <ol start="4" type="a" style="margin-bottom: 0cm; margin-top: 0cm;">
                     <ol start="2" type="I" style="margin-bottom: 0cm; margin-top: 0cm;">
-                        <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify;">
+                        <li style="margin-top: 0cm;margin-right: 0cm;margin-bottom: 0cm;text-align: justify;list-style-type: inherit;">
                             <strong>Facebook Pixel</strong> to process information about
                             your activity on this&nbsp;<span style="color: windowtext;">W</span>ebsite, such as
                             the&nbsp;<span style="color: windowtext;">w</span>ebsite visited, Facebook identity, browser
@@ -372,7 +488,7 @@
                     <span><br>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol start="5" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>Essential
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>Essential
                                     Cookies</span></strong><span>&nbsp;are known as strictly
                                 necessary&nbsp;</span>C<span>ookies for you to browse the LYOTECH
                                 LABS&nbsp;</span>w<span>ebsite and use the features of it, such as accessing secure
@@ -391,7 +507,7 @@
                     <span><br>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol start="6" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>Functionality
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>Functionality
                                     Cookies</span></strong><span>&nbsp;allow our website to remember choices you have
                                 made in
                                 the past like what language you prefer, what region you would
@@ -410,7 +526,9 @@
                 <p style="margin: 0cm 0cm 0cm 58.5pt; line-height: 26px; font-size: 15px; text-indent: -22.5pt;">
                     <span><br>&nbsp;</span></p>
                 <ol start="7" style="list-style-type: lower-alpha; margin-left: 48.5px;">
-                    <li><strong><span>Performance Cookies&nbsp;</span></strong><span>collect information about how you
+                    <li style="
+    list-style-type: lower-alpha;
+"><strong><span>Performance Cookies&nbsp;</span></strong><span>collect information about how you
                             use our website, like which
                             page you visited and which link you clicked on. None of this
                             type of information can be used to identify you. All information
@@ -421,7 +539,7 @@
                             functions. Analytics may
                             collect information through log data, such as;</span></li>
                 </ol>
-                <ol style="list-style-type: lower-roman; margin-left: 116px;">
+                <ol style="list-style-type: lower-roman; margin-left: 116px;" class="roman-list">
                     <li><span>IP address</span></li>
                     <li><span>Type of browser and device</span></li>
                     <li><span>Operating system</span></li>
@@ -434,7 +552,7 @@
                     <span><br>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol start="8" style="margin-bottom: 0cm; list-style-type: lower-alpha; margin-left: 48.5px;">
-                        <li style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>Marketing
+                        <li style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style-type: lower-alpha;"><strong><span>Marketing
                                     &amp; Targeting Cookies</span></strong><span>&nbsp;track your online activity to
                                 help advertisers deliver
                                 more relevant advertising or to limit how many times you see
@@ -466,7 +584,7 @@
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span><br>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol style="margin-bottom: 0cm; list-style-type: undefined;">
-                        <li value="4" style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>HOW
+                        <li value="4" style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style: auto;"><strong><span>HOW
                                     CAN I CONTROL COOKIES?</span></strong></li>
                     </ol>
                 </div>
@@ -503,7 +621,7 @@
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;"><span><br>&nbsp;</span></p>
                 <div style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;">
                     <ol style="margin-bottom: 0cm; list-style-type: undefined;">
-                        <li value="5" style="margin: 0cm 0cm 8pt; line-height: 26px; font-size: 15px;"><strong><span>HOW
+                        <li value="5" style="margin: 0cm 0cm 8pt;line-height: 26px;font-size: 15px;list-style: auto;"><strong><span>HOW
                                     OFTEN WE UPDATE THIS COOKIE&nbsp;</span>POLICY<span>?</span></strong></li>
                     </ol>
                 </div>
@@ -596,77 +714,77 @@
 
                             <ul class="row g-0 footer-socials">
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://t.me/lyopay" target="_blank">
                                         <img src="assets/img/Social-icon/001.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://blog.lyopay.com/" target="_blank">
                                         <img src="assets/img/Social-icon/002.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://facebook.com/lyopayofficial" target="_blank">
                                         <img src="assets/img/Social-icon/003.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://instagram.com/lyopayofficial/" target="_blank">
                                         <img src="assets/img/Social-icon/004.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://twitter.com/lyopayofficial" target="_blank">
                                         <img src="assets/img/Social-icon/005.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://crunchbase.com/organization/lyopay" target="_blank">
                                         <img src="assets/img/Social-icon/006.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://xangle.io/en/project/LYO/key-info" target="_blank">
                                         <img src="assets/img/Social-icon/007.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://www.youtube.com/c/lyopay" target="_blank">
                                         <img src="assets/img/Social-icon/008.svg">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://coinmarketcap.com/currencies/lyo-credit/" target="_blank">
                                         <img src="assets/img/Social-icon/009.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://www.coingecko.com/en/coins/lyo-credit" target="_blank">
                                         <img src="assets/img/Social-icon/010.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://www.linkedin.com/company/lyopay/" target="_blank">
                                         <img src="assets/img/Social-icon/011.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://lyopay.com/lyopay-whitepaper.pdf" target="_blank">
                                         <img src="assets/img/Social-icon/012.png">
                                     </a>
                                 </li>
@@ -705,7 +823,7 @@
                                     <a href="privacy.html">Privacy</a>
                                 </li>
                                 <li>
-                                    <a href="support.html">Support</a>
+                                    <a href="terms.html">Terms</a>
                                 </li>
                             </ul>
                         </div>

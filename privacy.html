@@ -31,11 +31,10 @@
     <link href="style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
 
+
 </head>
 
 <body>
-
-    
 
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
@@ -116,36 +115,36 @@
                                     <ul class="dropdown-menu cart-list">
                                         <li>
                                             <div class="thumb">
-                                                <a href="#" class="photo">
+                                                <a href="shop-cart.html" class="photo">
                                                     <img src="assets/img/product/2.png" alt="Thumb">
                                                 </a>
-                                                <a href="#" class="remove-product">
+                                                <a href="shop-cart.html" class="remove-product">
                                                     <i class="fas fa-times"></i>
                                                 </a>
                                             </div>
                                             <div class="info">
-                                                <h6><a href="#">Delica omtantur </a></h6>
+                                                <h6><a href="shop-cart.html">Delica omtantur </a></h6>
                                                 <p>2x - <span class="price">$99.99</span></p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="thumb">
-                                                <a href="#" class="photo">
+                                                <a href="shop-cart.html" class="photo">
                                                     <img src="assets/img/product/3.png" alt="Thumb">
                                                 </a>
-                                                <a href="#" class="remove-product">
+                                                <a href="shop-cart.html" class="remove-product">
                                                     <i class="fas fa-times"></i>
                                                 </a>
                                             </div>
                                             <div class="info">
-                                                <h6><a href="#">Omnes ocurreret</a></h6>
+                                                <h6><a href="shop-cart.html">Omnes ocurreret</a></h6>
                                                 <p>1x - <span class="price">$33.33</span></p>
                                             </div>
                                         </li>
                                         <li class="total">
                                             <span class="pull-right"><strong>Total</strong>: $0.00</span>
-                                            <a href="#" class="btn btn-default btn-cart">Cart</a>
-                                            <a href="#" class="btn btn-default btn-cart">Checkout</a>
+                                            <a href="shop-cart.html" class="btn btn-default btn-cart">Cart</a>
+                                            <a href="shop-cart.html" class="btn btn-default btn-cart">Checkout</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -177,6 +176,7 @@
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
+
 
      <!-- Modal Login Register Start -->
      <div class="modal fade" id="LoginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -292,131 +292,348 @@
 
  <!-- Modal Login Register End -->
 
-
-
-
-    <!-- Start Cart 
+    <!-- Start Breadcrumb 
     ============================================= -->
-
-
-    <div class="cartContainer-Wrap">
+    <div class="breadcrumb-area text-center shadow dark text-light bg-cover"
+        style="background-image: url(assets/img/banner/26.jpg);">
         <div class="container">
-
-            <h4>Shopping Cart (3)</h4>
-
-            <div class="cart-table table-responsive">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th class="pro-thumbnail">Image</th>
-                            <th class="pro-title">Product</th>
-                            <th class="pro-price">Price</th>
-                            <th class="pro-quantity">Quantity</th>
-                            <th class="pro-subtotal">Total</th>
-                            <th class="pro-remove">Remove</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td class="pro-thumnail">
-                                <img src="assets/img/coolwallet.png" alt="Product Thumbnail">
-                            </td>
-                            <td class="pro-title">
-                                <span> CoolWallet-S</span>
-                            </td>
-                            <td class="pro-price">
-                                <span>$8.00</span>
-                            </td>
-                            <td class="pro-quantity">
-                                <!-- <div class="quantity">
-                                    <div class="product-quantity">
-                                        <input class="cart-plus-minus-box" type="text" value="1" name="updates[]">
-                                        <span class="dec qtybtn"> - </span><span class="inc qtybtn"> + </span>
-                                    </div>
-                                </div> -->
-
-                                <div class="product-purchase-list">
-                                    <input type="number" id="quantity" step="1" name="quantity" min="0" placeholder="0">
-                                </div>
-
-
-                            </td>
-                            <td class="pro-subtotal">
-                                <span class="money" data-currency-usd="$110.00">$110.00</span>
-                            </td>
-                            <td class="pro-remove">
-                                <a href="#"><i class="fa fa-trash"></i></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-            <div class="cart-update-option">
-                <div class="cart-update mt-sm-16">
-
-                    <input class="btn dark-primary-btn" name="update" type="submit" value="Update Cart">
-                    <a class="btn primary-black" href="#">Clear Cart</a>
-
-                </div>
-            </div>
-
-
-            <div class="cartWrap">
-
-            
-
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="apply-coupon-wrapper">
-
-
-
-
-                    </div>
-                </div>
-                <div class="col-lg-6  col-custom">
-                    <!-- Cart Calculation Area -->
-                    <div class="cart-calculator-wrapper">
-                        <div class="cart-calculate-items">
-                            <h3>Cart Totals</h3>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td>Subtotal</td>
-                                            <td><span class="amount"><span id="bk-cart-subtotal-price"><span
-                                            class="money"
-                                            data-currency-usd="$110.00">$110.00</span></span></span>
-                                            </td>
-                                        </tr>
-                                        <tr class="total">
-                                            <td>Total</td>
-                                            <td class="total-amount"><span class="amount"><span
-                                            id="bk-cart-subtotal-price"><span class="money"
-                                                data-currency-usd="$110.00">$110.00</span></span></span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="proceed-to-checkout">
-                            <a href="Checkout.html" type="submit" class="btn primary-btn w-100 proceed-checkout"
-                                name="checkout">Proceed to Checkout</a>
-                        </div>
-                    </div>
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Privacy</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="active">Privacy</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
-        </div>
         </div>
     </div>
+    <!-- End Breadcrumb -->
 
+    <!-- Start Cookies 
+    ============================================= -->
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-12 col-md-12 ml-auto mr-auto">
+                <p><strong><span style="font-size:19px">Cookie Policy</span></strong></p>
+                <p><strong><span style="color:gray">Last Updated 08.02.2022</span></strong></p>
+                <p><span>We use cookies to enhance your online experience and this Cookie
+                        Policy (herein referred to as </span>“<strong>Policy</strong>”)
+                    <span>describes what </span>c<span>ookies are and how LYOTECH LABS (hereinafter
+                        referred as
+                        “<strong>LYOTECH LABS</strong>,
+                        “<strong>we</strong>”,
+                        “<strong>us</strong>” and
+                        “<strong>our''</strong>) uses cookies, pixels and
+                        similar technologies to recognize You (hereinafter referred as
+                        “<strong>User</strong>”,
+                        “<strong>you</strong>”,
+                        “<strong>your</strong>”) when you visit our
+                        website </span><a href="https://www.lyotechlabs.com/"><span style="color:#0563c1">lyotechlabs.com</span></a><span style="color:#4472c4">. </span></p>
+                <p><span style="color:#4472c4"> </span></p>
+                <p><span>You should read this </span>Policy<span> so you can understand what type of
+                        cookies we use and what
+                        these technologies are, as well as you will have the right to
+                        control our use of cookies.</span><span> </span><span style="font-size:16px">Further</span><span>, </span>c<span>ookies do not contain
+                        any information that personally identifies
+                        a User, however the personal information that we use, store and
+                        keep about you may be linked to the information stored in and
+                        obtained from Cookies. For further information see our
+                        <strong>Privacy Policy</strong>. </span></p>
+                <p><span> </span></p>
+                <p><span> </span></p>
+                <ol start="1" type="1" style="margin-bottom:0;margin-top:0">
+                    <li style="
+    list-style: auto;
+"><strong>WHAT ARE COOKIES?</strong></li>
+                </ol>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p><span>Cookies are small text files that are placed on your device like
+                        computer, mobile or any other device by a website, containing
+                        details of your browsing history and we use cookies to identify
+                        and prevent fraudulent activity. In simple terms it is
+                        explained as that it contains information about your browsing
+                        activity. Whenever you visit our </span>website<span>, it sends a cookie to the
+                        device you are using to access
+                        the </span>w<span>ebsite. Your device automatically stores the cookie in a file
+                        that’s located within your website browser. </span></p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p><span>Cookies allow </span>w<span>ebsites to recognize your device such as; when you
+                        revisit a
+                        site, the </span>w<span>ebsite will respond in a more personalized way,
+                        remembering your
+                        preferences, and it will make your page load faster. </span></p>
+                <p><span> </span></p>
+                <p><span>Cookies are not permanent and will expire after a short period of
+                        inactivity. </span></p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <ol start="2" type="1" style="margin-bottom:0;margin-top:0">
+                    <li style="
+    list-style: auto;
+"><strong>WHAT COOKIES WE USE?</strong></li>
+                </ol>
+                <p><strong><span> </span></strong></p>
+                <p><span>We use different types of </span>C<span>ookies. When you access the
+                    </span>w<span>ebsite, we will place strictly necessary </span>C<span>ookies on your
+                        browser or device. Other types of Cookies will be
+                        stored only if you have accepted the use of such </span>C<span>ookies. </span>
+                </p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p style="text-indent:36pt"><span>The full list of </span>C<span>ookies we used on
+                        LYOTECH LABS website is below:</span></p>
+                
+                <ol style="list-style-type:lower-roman;margin-left:53px" class="roman-list">
+                    <li><span>Session Cookies </span></li>
+                    <li><span>Persistent Cookies</span></li>
+                    <li><span>First Party Cookies</span></li>
+                    <li><span>Third Party Cookies </span></li>
+                    <li><span>Essential Cookies</span></li>
+                    <li><span>Functionality Cookies </span></li>
+                    <li><span>Performance Cookies</span></li>
+                    <li><span>Marketing Cookies </span></li>
+                </ol>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span><br> </span></p>
+                <ol start="3" type="1" style="margin-bottom:0;margin-top:0">
+                    <li style="
+    list-style: auto;
+"><strong>WHY DO WE USE COOKIES?</strong></li>
+                </ol>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span><br> </span></p>
+                <div>
+                    <ol start="1">
+                        <li style="
+    list-style-type: initial;
+"><strong><span>Session Cookies</span></strong><span> are temporary and expire
+                                once you close your browser.
+                                It stores information for the time, or session that the user
+                                is on the </span>w<span>ebsite</span></li>
+                    </ol>
+                </div>
+                <p><span> </span></p>
+                <div>
+                    <ol start="2">
+                        <li style="
+    list-style: initial;
+"><strong><span>Persistent Cookies </span></strong><span>encompasses all
+                                Cookies that remain on your hard drive until
+                                you erase or your browser does it. It depends on the
+                                Cookie’s expiration date. All </span>P<span>ersistent
+                            </span>C<span>ookies have an expiration date written into their code, but
+                                their duration can vary. </span></li>
+                    </ol>
+                </div>
+                <p><strong><span> </span></strong></p>
+                <div>
+                    <ol start="3">
+                        <li style="
+    list-style-type: initial;
+"><strong><span>First Party Cookies</span></strong><span> are put on your
+                                device directly by the website of
+                                LYOTECH LABS in which you are visiting</span></li>
+                    </ol>
+                </div>
+                <p><span> </span></p>
+                <div>
+                    <ol start="4">
+                        <li style="
+    list-style-type: initial;
+"><strong><span>Third</span> <span>Party</span>
+                                <span>Cookies</span></strong><span> are placed on your device, not by
+                                this </span>w<span>ebsite you are visiting, but by a third party like an
+                                advertiser or an analytic system. Generally, the Third Party
+                                Cookies consist of tracking </span>C<span>ookies used to identify online
+                                behavior, understand interests
+                                and then customize advertising the user on other </span>w<span>ebsites.
+                                Any information obtained from Third Party
+                                Cookies is processed by the respective service provider. We
+                                kindly recommend that you read our
+                                <strong><em>Privacy Policy</em></strong> for more detailed
+                                information. You may opt-out of the processing of Third Party
+                                Cookies at any time. The following Third Party services may
+                                use this Website:</span></li>
+                    </ol>
+                </div>
+                <p><strong><span> </span></strong></p>
+                <ol start="4" type="a" style="margin-bottom:0;margin-top:0;margin-left: 50px;">
+                    <ol start="1" type="I" style="margin-bottom:0;margin-top:0">
+                        <li style="
+    list-style-type: inherit;
+"><strong>Google Analytics Cookies</strong> to measure your
+                            interactions with the content of our website. These <span style="color:windowtext">Co</span>okies collect information about your
+                            interactions with our
+                            website, such as unique visits, repeat visits, session duration
+                            and <span style="color:windowtext">w</span>ebsite
+                            activity;
+                        </li>
+                    </ol>
+                </ol>
+                <p><strong><span> </span></strong></p>
+                <ol start="4" type="a" style="margin-bottom:0;margin-top:0;margin-left: 50px;">
+                    <ol start="2" type="I" style="margin-bottom:0;margin-top:0">
+                        <li style="
+    list-style-type: inherit;
+"><strong>Facebook Pixel</strong> to process information about
+                            your activity on this <span style="color:windowtext">W</span>ebsite, such as
+                            the <span style="color:windowtext">w</span>ebsite visited, Facebook
+                            identity, browser data, and more. The
+                            information processed from Facebook pixel is used to serve ads
+                            based on your interests through Facebook, as well as to measure
+                            cross-device conversions and user interactions on this Website.
 
-
-
+                        </li>
+                    </ol>
+                </ol>
+                <p><span><br> </span></p>
+                <div>
+                    <ol start="5">
+                        <li style="
+    list-style: auto;
+"><strong><span>Essential Cookies</span></strong><span> are known as strictly
+                                necessary </span>C<span>ookies for you to browse the LYOTECH LABS
+                            </span>w<span>ebsite and use the features of it, such as accessing secure
+                                areas of our site. These Cookies do not require consent from
+                                you. Essential Cookies helps to make this </span>w<span>ebsite easy to
+                                use by providing basic functions such as page
+                                navigation, language selections, authorization and filling in
+                                forms. Our </span>w<span>ebsite will not function without these
+                            </span>C<span>ookies and they cannot be disabled. These </span>C<span>ookies
+                                do not reveal the User’s identity or collect
+                                user information. They are stored on the user’s device
+                                until the browser is closed. </span></li>
+                    </ol>
+                </div>
+                <p><span><br> </span></p>
+                <div>
+                    <ol start="6">
+                        <li style="
+    list-style: auto;
+"><strong><span>Functionality Cookies</span></strong><span> allow our website
+                                to remember choices you have made in
+                                the past like what language you prefer, what region you would
+                                like or what username and password are so you can
+                                automatically log in. We use Cookies for navigation and to
+                                facilitate your access to and use of this site. These Cookies
+                                are necessary for transmission of communications on the
+                                network or to supply services whatever requested by you.
+                                Further they help us to know which pages are the most and
+                                least popular and see how visitors move around the </span>w<span>ebsite.
+                                We use Third Party Cookies, which are set on your
+                                device for up to 2 years or deleted, if you erase your
+                                browser </span>C<span>ookie data.</span></li>
+                    </ol>
+                </div>
+                <p><span><br> </span></p>
+                <ol start="7" style="list-style-type:lower-alpha;margin-left:48.5px">
+                    <li style="
+    list-style: lower-alpha;
+"><strong><span>Performance Cookies </span></strong><span>collect information
+                            about how you use our website, like which
+                            page you visited and which link you clicked on. None of this
+                            type of information can be used to identify you. All information
+                            we receive from these Cookies are in aggregated form. We use
+                            Third Party Cookies, which are set on your device for up to 2
+                            years or deleted, if you erase your browser data. The sole
+                            purpose of </span>p<span>erformance </span>C<span>ookies is to improve our
+                            website functions. Analytics may
+                            collect information through log data, such as;</span></li>
+                </ol>
+                <ol style="list-style-type:lower-roman;margin-left:116px" class="roman-list">
+                    <li><span>IP address</span></li>
+                    <li><span>Type of browser and device</span></li>
+                    <li><span>Operating system</span></li>
+                    <li><span>Name of the internet service provider</span></li>
+                    <li><span>Country information </span></li>
+                    <li><span>Date and time of visit</span></li>
+                    <li><span>Web page origin and exit</span></li>
+                </ol>
+                <p><span><br> </span></p>
+                <div>
+                    <ol start="8">
+                        <li style="
+    list-style: auto;
+"><strong><span>Marketing &amp; Targeting Cookies</span></strong><span> track your
+                                online activity to help advertisers deliver
+                                more relevant advertising or to limit how many times you see
+                                and ad. These </span>C<span>ookies may be set through </span>o<span>ur
+                            </span>w<span>ebsite by our advertising partners. They may be used by those
+                                companies to build a profile of your interests and show you
+                                relevant adverts on other sites. They do not store directly
+                                personal information but are based on uniquely identifying
+                                your browser and internet device. However, these are
+                                Persistent Cookies which are third-party-provenance.
+                                These </span>C<span>ookies may be set through this </span>w<span>ebsite
+                                by </span>o<span>ur advertising partners. If you do not allow these
+                                cookies,
+                                you will experience less targeted advertising. These cookies
+                                are set on your device for up to 2 years or deleted, if you
+                                erase your browser </span>C<span>ookie data. </span></li>
+                    </ol>
+                </div>
+                <p><strong><span> </span></strong></p>
+                <p><span>We may use third party APIs and software development kits
+                        (“SDKs”) as part of the functionality of </span>o<span>ur services. APIs and
+                        SDKs may allow third parties including
+                        analytics and advertising partners to collect your personal data
+                        for various purposes including to provide analytics services and
+                        content that is more relevant to you. For more information about
+                        our use of APIs and SDKs, please contact us.</span></p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span><br> </span></p>
+                <div>
+                    <ol style="margin-bottom:0;list-style-type:undefined">
+                        <li value="9" style="
+    list-style: auto;
+"><strong><span>HOW CAN I CONTROL COOKIES?</span></strong></li>
+                    </ol>
+                </div>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p><span>When you visit our website, you will see an informative statement
+                        that the website uses </span>C<span>ookies and a request of your consent to
+                        enable analytical and
+                        marketing </span>C<span>ookies. </span></p>
+                <p><span> </span></p>
+                <p><span>You reserve the right to decide whether to accept or
+                        reject </span>C<span>ookies from our website. You can exercise your cookie
+                        rights by
+                        setting your preferences. However, Users will not be able to
+                        reject the Essential Cookies, as they are strictly necessary to
+                        provide you with services. </span></p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p><span>In the event you choose to reject </span>C<span>ookies, you may still use our
+                        website though your access to some
+                        functionality and areas of our website may be restricted. You may
+                        also set or amend your web browser controls to accept or
+                        refuse </span>C<span>ookies. Be conscious of rejecting or disabling
+                    </span>C<span>ookies, where it may affect the functionality of our website.
+                        Therefore, it is recommended that you do not disable </span>C<span>ookies.
+                    </span></p>
+                <p><span> </span></p>
+                <p><span>You can also separately opt-out from having your website activity
+                        available to Google by installing the Google Analytics opt-out
+                        browser add-on, which prevents sharing information about your
+                        website. </span></p>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span><br> </span></p>
+                <div>
+                    <ol style="margin-bottom:0;list-style-type:undefined">
+                        <li value="10" style="
+    list-style: auto;
+"><strong><span>HOW OFTEN WE UPDATE THIS COOKIE
+                                </span>POLICY<span>?</span></strong></li>
+                    </ol>
+                </div>
+                <p style="margin-top:0;margin-right:0;margin-bottom:0"><span> </span></p>
+                <p><span>We may review this Policy regularly and update it from time to
+                        time. The date at the top of this Policy indicates when it was
+                        last updated. In the event of any updates, it shall be indicated
+                        at the top of this page, therefore please re-visit this Policy
+                        regularly to stay informed about our use of Cookies and related
+                        technologies. </span></p>
+            </div>
+        </div>
+    </div>
+    <!-- End Shop -->
 
     <!-- Start Footer 
     ============================================= -->
@@ -432,7 +649,7 @@
                                     <li>
                                         LYOTECH LABS ELECTRONICS TRADING L.L.C
                                         Building name: WHP2-BLOCK-T COMMERCIAL
-                                       Area: Saih Shuaib 3, Dubai, UAE
+                                        Area: Saih Shuaib 3, Dubai, UAE
                                     </li>
                                     <li>
                                         <div class="icon">
@@ -440,10 +657,11 @@
                                         </div>
                                         <div class="content">
                                             <strong>Email:</strong>
-                                          <a href="mailto:info@lyotechlabs.com" target="_blank">info@lyotechlabs.com</a>
+                                            <a href="mailto:info@lyotechlabs.com"
+                                                target="_blank">info@lyotechlabs.com</a>
                                         </div>
                                     </li>
-                              
+
                                 </ul>
                             </div>
 
@@ -493,77 +711,77 @@
 
                             <ul class="row g-0 footer-socials">
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://t.me/lyopay" target="_blank">
                                         <img src="assets/img/Social-icon/001.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://blog.lyopay.com/" target="_blank">
                                         <img src="assets/img/Social-icon/002.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://facebook.com/lyopayofficial" target="_blank">
                                         <img src="assets/img/Social-icon/003.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://instagram.com/lyopayofficial/" target="_blank">
                                         <img src="assets/img/Social-icon/004.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://twitter.com/lyopayofficial" target="_blank">
                                         <img src="assets/img/Social-icon/005.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://crunchbase.com/organization/lyopay" target="_blank">
                                         <img src="assets/img/Social-icon/006.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://xangle.io/en/project/LYO/key-info" target="_blank">
                                         <img src="assets/img/Social-icon/007.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://www.youtube.com/c/lyopay" target="_blank">
                                         <img src="assets/img/Social-icon/008.svg">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://coinmarketcap.com/currencies/lyo-credit/" target="_blank">
                                         <img src="assets/img/Social-icon/009.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://www.coingecko.com/en/coins/lyo-credit" target="_blank">
                                         <img src="assets/img/Social-icon/010.png">
                                     </a>
                                 </li>
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://www.linkedin.com/company/lyopay/" target="_blank">
                                         <img src="assets/img/Social-icon/011.png">
                                     </a>
                                 </li>
 
 
                                 <li class="col-2 col-md-3">
-                                    <a href="#">
+                                    <a href="https://lyopay.com/lyopay-whitepaper.pdf" target="_blank">
                                         <img src="assets/img/Social-icon/012.png">
                                     </a>
                                 </li>

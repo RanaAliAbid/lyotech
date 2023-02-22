@@ -148,6 +148,17 @@
                                         </li>
                                     </ul>
                                 </li>
+
+                                <li class="userAccount" data-bs-toggle="modal" data-bs-target="#LoginRegisterModal"
+                                data-toggle="dropdown">
+                                <a href="#">
+                                    <i class="far fa-user"></i>
+                                    <div class="UserInfoLogin">
+                                        <span class="nameUser">Hello, Sign in</span>
+                                        <span>My Account</span>
+                                    </div>
+                                </a>
+                            </li>
                             </ul>
                         </div>
                         <!-- End Atribute Navigation -->
@@ -165,6 +176,121 @@
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
+
+
+     <!-- Modal Login Register Start -->
+     <div class="modal fade" id="LoginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div role="document" class="modal-dialog modal-dialog-centered modal-md">
+
+         <div class="modal-content">
+             <div class="modal-header bg-secondary">
+                 <div class="LoginRegister-Tabs">
+                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                         <li class="nav-item" role="presentation">
+                             <button class="nav-link active" id="Login-tab" data-bs-toggle="tab"
+                                 data-bs-target="#LoginTab" type="button" role="tab" aria-controls="LoginTab"
+                                 aria-selected="true">Login </button>
+                         </li>
+                         <li class="nav-item" role="presentation">
+                             <button class="nav-link" id="register-tab" data-bs-toggle="tab"
+                                 data-bs-target="#registerTab" type="button" role="tab" aria-controls="registerTab"
+                                 aria-selected="false" tabindex="-1">Sign Up</button>
+                         </li>
+                     </ul>
+                 </div>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+
+
+             <div class="modal-body">
+                 <div class="tab-content" id="myTabContent">
+
+                     <div class="tab-pane fade active show" id="LoginTab" role="tabpanel" aria-labelledby="home-tab">
+                         <form autocomplete="off" class="needs-validation tab-pane fade show active ">
+
+                             <div class="mb-3">
+                                 <label for="si-email" class="form-label">Email
+                                     address</label><input type="email" id="si-email"
+                                     placeholder="johndoe@example.com" required="" formcontrolname="email"
+                                     class="form-control ">
+                                 <div class="invalid-feedback">Please provide a valid email
+                                     address.</div>
+                             </div>
+
+                             <div class="mb-3"><label for="si-password" class="form-label">Password </label>
+                                 <div class="password-toggle"><input id="si-password" required=""
+                                         formcontrolname="password" class="form-control" type="password">
+                                     <label aria-label="Show/hide password" class="password-toggle-btn">
+                                         <input type="checkbox" class="password-toggle-check">
+                                         <span class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                 </div>
+                             </div>
+
+                             <div class="mb-3 d-flex flex-wrap justify-content-between">
+                                 <div class="form-check mb-2">
+                                     <input type="checkbox" id="si-remember" class="form-check-input"><label
+                                         for="si-remember" class="form-check-label">Remember me</label>
+                                 </div>
+                                 <a href="#" class="fs-sm">Forgot password?</a>
+                             </div>
+
+                             <button type="submit" onclick="location.href='account-user.html';"
+                                 class="btn btn-theme d-block w-100">Sign
+                                 in</button>
+                         </form>
+                     </div>
+
+
+
+                     <div class="tab-pane fade" id="registerTab" role="tabpanel" aria-labelledby="registerTab">
+                         <form novalidate="" autocomplete="off" class="needs-validation tab-pane fade show active ">
+                             <div class="mb-3"><label for="su-name" class="form-label">Full
+                                     name</label><input type="text" id="su-name" placeholder="John Doe" required=""
+                                     formcontrolname="name" class="form-control ">
+                                 <div class="invalid-feedback">Please fill in your name.</div>
+                             </div>
+                             <div class="mb-3"><label for="su-email">Email address</label><input type="email"
+                                     id="su-email" placeholder="johndoe@example.com" required=""
+                                     formcontrolname="email" class="form-control ">
+                                 <div class="invalid-feedback">Please provide a valid email address.</div>
+                             </div>
+                             <div class="mb-3"><label for="su-password" class="form-label">Password</label>
+                                 <div class="password-toggle"><input id="su-password" required=""
+                                         formcontrolname="password" class="form-control " type="password"><label
+                                         aria-label="Show/hide
+                 password" class="password-toggle-btn"><input type="checkbox" class="password-toggle-check"><span
+                                             class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                 </div>
+                             </div>
+                             <div class="mb-3"><label for="su-password-confirm" class="form-label">Confirm
+                                     password</label>
+                                 <div class="password-toggle"><input id="su-password-confirm" required=""
+                                         class="form-control" type="password"><label aria-label="Show/hide
+                 password" class="password-toggle-btn"><input type="checkbox" class="password-toggle-check"><span
+                                             class="password-toggle-indicator mdi-eye-off-outline"></span></label>
+                                 </div>
+                             </div><button type="submit" class="btn btn-theme d-block w-100">Sign
+                                 up</button>
+                         </form><!---->
+                     </div>
+
+
+                 </div>
+             </div>
+
+
+
+
+
+
+         </div>
+
+
+     </div>
+ </div>
+
+ <!-- Modal Login Register End -->
 
      <!-- Start Breadcrumb 
     ============================================= -->
@@ -871,7 +997,7 @@
                                     <a href="privacy.html">Privacy</a>
                                 </li>
                                 <li>
-                                    <a href="support.html">Support</a>
+                                    <a href="terms.html">Terms</a>
                                 </li>
                             </ul>
                         </div>

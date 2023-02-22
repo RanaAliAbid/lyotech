@@ -194,7 +194,7 @@
 
 @media only screen and (max-width: 1023px) {
 	.navbar-brand>img {
-		width: 210px !important;
+		width: 160px !important;
 		height: auto !important;
 	}
 }
@@ -2173,6 +2173,9 @@ nav.navbar.validnavs.brand-center {
 
 @media (max-width: 550px) {
 	.attr-right {
+		/* display: none !important; */
+	}
+	li.userAccount a .UserInfoLogin{
 		display: none !important;
 	}
 	.side {
@@ -2199,7 +2202,7 @@ nav.navbar.validnavs.brand-center {
 		display: none;
 	}
 	.attr-nav {
-		display: none !important;
+		/* display: none !important; */
 	}
 }
 
@@ -2550,7 +2553,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 
 @media (max-width: 1023px) {
 	.attr-nav {
-		margin-left: -100px;
+		margin-left: 0;
 	}
 }
 @media only screen and (min-width: 1023px) and (max-width: 1199px) {
