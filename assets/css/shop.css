@@ -2686,15 +2686,7 @@ form.checkout.woocommerce-checkout table strong {
   align-items: center;
 }
 
-.dark-primary-btn{
-  background: #36383c !important;
-  color: #fff;
-  box-shadow: none !important;
-  border: none !important;
-}
-.dark-primary-btn:hover{
-  opacity: 0.8;
-}
+
 .btn.primary-black {
   color: #fff;
   border: 1px solid #c65b59;

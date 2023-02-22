@@ -12244,3 +12244,12 @@ input.password-toggle-check {
 ol.roman-list li {
   list-style: lower-roman;
 }
+.dark-primary-btn {
+  background: #36383c !important;
+  color: #fff;
+  box-shadow: none !important;
+  border: none !important;
+}
+.dark-primary-btn:hover{
+  opacity: 0.8;
+}
