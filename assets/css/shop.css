@@ -2695,13 +2695,13 @@ form.checkout.woocommerce-checkout table strong {
 .dark-primary-btn:hover{
   opacity: 0.8;
 }
-a.btn.primary-black {
+.btn.primary-black {
   color: #fff;
   border: 1px solid #c65b59;
   color: #c65b59;
   background: #fff;
 }
-a.btn.primary-black:hover {
+.btn.primary-black:hover {
   color: #fff;
   opacity: 0.8;
   border: 1px solid #36383c;
