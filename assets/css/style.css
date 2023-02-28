@@ -11781,6 +11781,7 @@ footer .address li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 500;
 }
 
 footer .address li strong {
@@ -12259,4 +12260,7 @@ ol.roman-list li {
 .text-light {
   color: #a1a1a1 !important;
   font-weight: 600;
+}
+div#specification-tab .table {
+  margin-bottom: 40px;
 }
