@@ -2419,7 +2419,7 @@ nav.navbar.validnavs.navbar-fixed {
 		transform: translate3d(0, 0, 0, 0);
 	}
 }
-
+ 
 nav.navbar.validnavs.mobile-sidenav .navbar-collapse.collapse.collapse-mobile {
 	position: fixed;
 	left: -485px;
@@ -2529,7 +2529,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	}
 
 
-	
+
 	.navbar.navbar-common .attr-right .attr-nav li.contact {
 		display: none;
 	}

@@ -1,7 +1,7 @@
 /* ===================================================================
     
     Author          : Valid Theme
-    Template Name   : Crysa - It Solution Template
+    Template Name   : LYOTECK Labs- It Solution 
     Version         : 1.0
     
 * ================================================================= */
