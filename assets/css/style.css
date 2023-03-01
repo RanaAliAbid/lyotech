@@ -11943,7 +11943,7 @@ footer.bg-dark::after {
   content: "";
   height: 300px;
   width: 300px;
-  background: #0080f0;
+  background: #424242;
   z-index: -1;
   border-radius: 50%;
   -webkit-filter: blur(80px);
@@ -12263,4 +12263,27 @@ ol.roman-list li {
 }
 div#specification-tab .table {
   margin-bottom: 40px;
+}
+.address.text-center ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+.f-item.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-items.default-padding {
+  padding: 40px 0 10px;
+}
+
+footer.bg-dark.text-light {
+  background: #36383c !important;
 }
